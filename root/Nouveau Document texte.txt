@@ -22,12 +22,7 @@
 </head>
 <body>
     <pre>
-        if executor == "Solar" or executor == "Xeno" or executor == "Delta" or executor == "Luna" then
-            game:getService("Players")["LocalPlayer"]:kick("Your executor is not supported. You may find a list of supported executors at #information in our discord.")
-        end
-
-        local id = game["gameId"]
-        loadstring(game:HttpGet("id = 1008451066 and 'https://api.luarmor.net/files/v3/loaders/ddb6889bc489c6c69d4f75739bf9d.lua' or 'https://api.luarmor.net/files/v3/loaders/2a8bc8332d1b0a228f92fb1c72122cc.lua'"))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/THEPERFECTHUB2025/-S_C_R_I_P_T-/refs/heads/main/AHAHAHAHAHAHAHHHHHHHHHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHHAAAAAAAAAAA'))()
     </pre>
 </body>
 </html>
