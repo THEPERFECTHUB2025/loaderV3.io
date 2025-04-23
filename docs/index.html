@@ -3,20 +3,79 @@
 <head>
     <style>
         body {
-            transition: opacity ease-in 0.2s;
-            opacity: 0.8;
-            display: block;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            font-family: 'Courier New', Courier, monospace;
             overflow: hidden;
             position: relative;
+            transition: opacity ease-in 0.2s;
+            opacity: 0.9;
         }
+
+        /* Add a subtle glowing background effect */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1), transparent);
+            z-index: -1;
+            animation: pulse 5s infinite;
+        }
+
         pre {
-            color: #content_light_dark;
-            headbodyxpre {
-                style {
-                    word-wrap: break-word;
-                    white-space: pre-wrap;
-                }
+            color: #00ffcc; /* Neon cyan text */
+            font-size: 1.2rem;
+            line-height: 1.5;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+            max-width: 80%;
+        }
+
+        /* Glowing animation for the text */
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
             }
+            to {
+                box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
+            }
+        }
+
+        /* Pulsing background effect */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.2;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.2;
+            }
+        }
+
+        /* Add a subtle hover effect */
+        pre:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
